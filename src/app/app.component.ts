@@ -1,10 +1,11 @@
 import { Component } from '@angular/core';
 import { RouterOutlet } from '@angular/router';
+import { HeadingComponent } from "./components/heading/heading.component";
 
 @Component({
   selector: 'demo-root',
   standalone: true,
-  imports: [RouterOutlet],
+  imports: [RouterOutlet, HeadingComponent],
   templateUrl: './app.component.html',
   styleUrl: './app.component.css'
 })
