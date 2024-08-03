@@ -1,12 +1,13 @@
-import { Component } from '@angular/core';
+import { Component, Input } from '@angular/core';
+import { TextComponent } from "../text/text.component";
 
 @Component({
   selector: 'demo-heading',
   standalone: true,
-  imports: [],
+  imports: [TextComponent],
   templateUrl: './heading.component.html',
   styleUrl: './heading.component.css'
 })
 export class HeadingComponent {
-
+  @Input() text: string = "";
 }
